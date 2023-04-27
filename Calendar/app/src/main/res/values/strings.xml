@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="month">Kwiecień 2023</string>
+    <string name="rightArrow"><![CDATA[>]]></string>
+    <string name="leftArrow"><![CDATA[<]]></string>
+    <string name="dayOfMonth">1</string>
+    <string name="add_event">Add_event</string>
+    <string name="delete_event">Delete_event</string>
+    <string name="week_menu">week_menu</string>
+    <string name="daily_menu">daily_menu</string>
+    <string name="event1">Event1</string>
+    <string name="hour">01:00</string>
+</resources>
