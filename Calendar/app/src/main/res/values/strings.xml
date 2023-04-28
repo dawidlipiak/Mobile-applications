@@ -6,8 +6,13 @@
     <string name="dayOfMonth">1</string>
     <string name="add_event">Add_event</string>
     <string name="delete_event">Delete_event</string>
-    <string name="week_menu">week_menu</string>
-    <string name="daily_menu">daily_menu</string>
+    <string name="week_view">week_view</string>
     <string name="event1">Event1</string>
     <string name="hour">01:00</string>
+    <string name="location">Location</string>
+    <string name="save">Save</string>
+    <string name="cancel">cancel</string>
+    <string name="arrowToRight"><![CDATA[->]]></string>
+    <string name="month_view">month_view</string>
+    <string name="delete">Delete</string>
 </resources>

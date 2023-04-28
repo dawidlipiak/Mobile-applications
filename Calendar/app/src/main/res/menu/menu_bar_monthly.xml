@@ -14,12 +14,9 @@
         android:icon="@drawable/baseline_delete_24"
         app:showAsAction="ifRoom"/>
     <item
-        android:title="@string/week_menu"
-        android:id="@+id/weekOption"
-        app:showAsAction="never"/>
-    <item
-        android:title="@string/daily_menu"
-        android:id="@+id/dailyOption"
-        app:showAsAction="never"/>
+        android:title="@string/week_view"
+        android:id="@+id/week_view"
+        android:icon="@drawable/baseline_view_list_24"
+        app:showAsAction="ifRoom"/>
 
 </menu>

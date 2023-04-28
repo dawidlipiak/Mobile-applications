@@ -8,31 +8,6 @@ class CalendarUtils {
     companion object {
         var selectedDate: LocalDate = LocalDate.now()
 
-        fun formattedDate(date: LocalDate): String {
-            val formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy")
-            return date.format(formatter)
-        }
-
-        fun formattedTime(time: LocalTime): String {
-            val formatter = DateTimeFormatter.ofPattern("hh:mm:ss a")
-            return time.format(formatter)
-        }
-
-        fun formattedShortTime(time: LocalTime): String {
-            val formatter = DateTimeFormatter.ofPattern("HH:mm")
-            return time.format(formatter)
-        }
-
-        fun monthYearFromDate(date: LocalDate): String {
-            val formatter = DateTimeFormatter.ofPattern("MMMM yyyy")
-            return date.format(formatter)
-        }
-
-        fun monthDayFromDate(date: LocalDate): String {
-            val formatter = DateTimeFormatter.ofPattern("MMMM d")
-            return date.format(formatter)
-        }
-
         fun daysInMonthArray(): ArrayList<LocalDate> {
             val daysInMonthArray = ArrayList<LocalDate>()
 
@@ -65,22 +40,6 @@ class CalendarUtils {
                 days.add(LocalDate.of(selectedDate.year, selectedDate.month,i))
             }
             return days
-        }
-
-        private fun sundayForDate(current: LocalDate): LocalDate {
-            var oneWeekAgo = current.minusWeeks(1)
-            var curr : LocalDate = current
-            Log.i("current", curr.toString())
-            while (curr.isAfter(oneWeekAgo)) {
-                if (curr.dayOfWeek == DayOfWeek.SUNDAY)
-                    break
-                Log.i("current", "loop")
-
-                curr = curr.minusDays(1)
-            }
-            Log.i("current", curr.toString())
-
-            return curr
         }
     }
 }

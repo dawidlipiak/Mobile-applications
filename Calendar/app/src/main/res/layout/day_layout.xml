@@ -17,12 +17,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <EditText
-            android:id="@+id/titlePlainText"
+        <TextView
+            android:id="@+id/titleEventView"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:inputType="textPersonName"
-            android:text="Title" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Title"
+            android:layout_gravity="left|center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
         <View
             android:layout_width="match_parent"
@@ -44,7 +47,7 @@
                 android:layout_marginStart="20dp">
 
                 <Button
-                    android:id="@+id/startDateButton"
+                    android:id="@+id/startDateView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -55,7 +58,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
                 <Button
-                    android:id="@+id/startTimeButton"
+                    android:id="@+id/startTimeView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -84,7 +87,7 @@
                 android:layout_marginEnd="20dp">
 
                 <Button
-                    android:id="@+id/endDateButton"
+                    android:id="@+id/endDateView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -95,7 +98,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
                 <Button
-                    android:id="@+id/endTimeButton"
+                    android:id="@+id/endTimeView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -127,24 +130,25 @@
                 android:layout_weight="0"
                 app:srcCompat="@drawable/baseline_location_on_24" />
 
-            <EditText
-                android:id="@+id/locationEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
+            <TextView
+                android:id="@+id/locationEventView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/location" />
+                android:text="Location"
+                android:layout_gravity="left|center"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/saveButton"
+        android:id="@+id/deleteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="saveAddButton"
-        android:text="@string/save"
+        android:onClick="deleteEventButton"
+        android:text="@string/delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
@@ -153,10 +157,10 @@
         app:layout_constraintVertical_bias="0.97" />
 
     <Button
-        android:id="@+id/cancelButton"
+        android:id="@+id/cancelButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cancelAddButton"
+        android:onClick="cancelDeleteButton"
         android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

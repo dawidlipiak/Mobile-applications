@@ -3,17 +3,15 @@ package com.example.calendar
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.icu.text.SimpleDateFormat
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import java.text.ParseException
 import java.time.LocalDate
 import java.util.*
 
-class WeekRecycleAdapter(private val daysOfMonth: ArrayList<LocalDate>, private val onItemListener: DailyMonthActivity)
+class WeekRecycleAdapter(private val daysOfMonth: ArrayList<LocalDate>, private val onItemListener: WeeklyActivity)
     : RecyclerView.Adapter<WeekRecycleAdapter.WeekViewHolder>() {
 
     class WeekViewHolder(view: View, onItemListener : OnItemListener,var daysOfMonth: ArrayList<LocalDate>)
