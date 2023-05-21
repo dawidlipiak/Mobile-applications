@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable man_icon
+drawable woman_icon
+drawable woman_icon_background
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+mipmap woman_icon
+mipmap woman_icon_foreground
+mipmap woman_icon_round
+string app_name
+style Theme.Mafia
+xml backup_rules
+xml data_extraction_rules
